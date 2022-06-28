@@ -41,12 +41,19 @@ log(shortNames)
 
 // 03 - Filter Numbers
 
-let array = [1, "toto", 34, "javascript", 8]
-log(array)
-log(Object.keys(array))
+// let array = [1, "toto", 34, "javascript", 8]
+// log(array)
+// log(Object.keys(array))
 
-let numbers = array.filter(number => typeof number ==="number") 
-log(numbers)
+// let numbers = array.filter(number => typeof number ==="number") 
+// log(numbers)
 
 // 04 - Filter Even
 
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8]
+let even = numbers.filter((number) => {
+    if(number % 2 === 0) {
+        return true
+    }
+})
+log(even)
