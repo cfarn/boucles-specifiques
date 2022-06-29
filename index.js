@@ -3,18 +3,8 @@ const log = (console.log)
 // 01 - Map Double
 
 // let array = [1, 2, 3, 4, 5]
-// let double = array.map(() => {
-//     return array
-// })
+// let double = array.map(db => db * 2)
 // log(double)
-
-// let numbers = [1, 2, 3, 4, 5]
-// let double = numbers.map((number) => {
-//     return number
-// })
-// log(double)
-
-
 
 // 02 - Map Names
 
@@ -34,7 +24,6 @@ const log = (console.log)
 // let shortNames = longNames.map((longName) => {
 //     return {
 //         name: Object.values(longName)
-        
 //     }
 // })
 // log(shortNames)
@@ -50,11 +39,7 @@ const log = (console.log)
 // 04 - Filter Even
 
 // let numbers = [1, 2, 3, 4, 5, 6, 7, 8]
-// let even = numbers.filter((number) => {
-//     if(number % 2 === 0) {
-//         return true
-//     }
-// })
+// let even = numbers.filter(number => number % 2 === 0)
 // log(even)
 
 // 05 - Cakes
@@ -95,15 +80,14 @@ let chocoCakes = cakes.filter((cake) => {
 })
 log(chocoCakes)
 
-let chocoCakesStatus = chocoCakes.map((chocoCake) => {
+// let chocoCakesStatus = chocoCakes.map.((status) => {
     // return {
     //     status: "sold out !"
     // }
-    // if(chocoCake.status === "available") {
+    // // if(chocoCake.status === "available") {
     //     return "sold out !"
     // }
-})
-log(chocoCakesStatus)
+// })
 
 // chocoCakes = chocoCakesStatus.map((chocoCake) => {
 //     return {
@@ -115,7 +99,28 @@ log(chocoCakesStatus)
 
 // 06 - Cake v2
 
-let pie = cakes.find((cake) => {
-    return cake.name === "pie"
-})
-log(pie)
+// let pie = cakes.find(cake => cake.name === "pie")
+// log(pie)
+
+// 07 - Factorielle forEach
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+// let fact = numbers.forEach((numbers, i) => {
+// 	if((numbers === 0) || (numbers ===1)) {
+// 		return 1
+// 	}else {
+// 		return (i * fact(i -1))
+// 	}
+// })
+let fact = numbers.forEach(number => log(number))
+log(fact)
+
+
+// 08 - Chess board
+
+// 09 - Exercice 3 bis
+
+const array = [12, 55, "hello", true, { isStudent: false }, 3]
+
+//  let numbers = array.filter(number => typeof number === "number") 
+// log(numbers)
