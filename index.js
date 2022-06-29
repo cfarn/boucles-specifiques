@@ -73,21 +73,25 @@ let cakes =
 	},
 ]
 
-let chocoCakes = cakes.filter((cake) => {
-    if(cake.flavor === "chocolate") {
-        return true
-    }
+const chocoCakes = cakes.filter((cake) => {
+    // if(cake.flavor === "chocolate") {
+    //     return true
+    // }
+	return cake.flavor === "chocolate"
 })
 log(chocoCakes)
 
-// let chocoCakesStatus = chocoCakes.map.((status) => {
-    // return {
-    //     status: "sold out !"
-    // }
-    // // if(chocoCake.status === "available") {
+let chocoCakesStatus = chocoCakes.map((chocoCake) => {
+	chocoCake.status = "sold out !"
+    return {
+		chocoCake
+        // status: "sold out !"
+    }
+    // if(chocoCake.status === "available") {
     //     return "sold out !"
     // }
-// })
+})
+log(chocoCakesStatus)
 
 // chocoCakes = chocoCakesStatus.map((chocoCake) => {
 //     return {
@@ -99,28 +103,69 @@ log(chocoCakes)
 
 // 06 - Cake v2
 
-// let pie = cakes.find(cake => cake.name === "pie")
+// const pie = cakes.find(cake => cake.name === "pie")
 // log(pie)
 
 // 07 - Factorielle forEach
 
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-// let fact = numbers.forEach((numbers, i) => {
-// 	if((numbers === 0) || (numbers ===1)) {
-// 		return 1
-// 	}else {
-// 		return (i * fact(i -1))
-// 	}
-// })
-let fact = numbers.forEach(number => log(number))
-log(fact)
-
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+// let num = 1
+// numbers.forEach(number => num *= number)
+// log(num)
 
 // 08 - Chess board
 
+const length = [0, 1, 2, 3, 4, 5, 6, 7]
+
+// length.forEach((line, i) => {
+// 	let stringLine = `Ligne: ${i} | `
+
+// 	length.forEach((square, j) => {
+// 		stringLine = stringLine + `[${j}]`
+// 	})
+// 	log(stringLine)
+// })
+
+// length.forEach((line, i) => {
+// 	let stringLine = ""
+
+// 	length.forEach((square, j) => {
+// 		if((i+j)%2===0) {
+// 			stringLine = stringLine + `[ ]`
+// 		}else {
+// 			stringLine = stringLine + `[x]`
+// 		}
+// 	})
+// 	log(stringLine)
+// })
+
+length.forEach((line, i) => {
+	let stringLine = ""
+
+	length.forEach((square, j) => {
+		if(i%2===0) {
+			if(j%2===0){
+				stringLine = stringLine + `[ ]`
+			}
+		}else {
+			stringLine = stringLine + `[x]`
+		}
+	}else {
+		// j%2!==0
+	}
+	)
+	log(stringLine)
+})
+
+
 // 09 - Exercice 3 bis
 
-const array = [12, 55, "hello", true, { isStudent: false }, 3]
+// const array = [12, 55, "hello", true, { isStudent: false }, 3]
+
+// const filterNums = array => {
+// 	 const numbers = array.filter(number => typeof number === "number")
+// 	 return filterNums
+// }
 
 //  let numbers = array.filter(number => typeof number === "number") 
-// log(numbers)
+// log(array)
