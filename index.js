@@ -44,54 +44,54 @@ const log = (console.log)
 
 // 05 - Cakes
 
-let cakes = 
-[
-	{
-		name: "cake",
-		flavor: "vanilla",
-		status: "available"
-	},
-	{
-		name: "brownie",
-		flavor: "chocolate",
-		status: "available"
-	},
-	{
-		name: "pie",
-		flavor: "strawberry",
-		status: "available"
-	},
-	{
-		name: "muffin",
-		flavor: "pistachio",
-		status: "available"
-	},
-	{
-		name: "donut",
-		flavor: "chocolate",
-		status: "available"
-	},
-]
+// let cakes = 
+// [
+// 	{
+// 		name: "cake",
+// 		flavor: "vanilla",
+// 		status: "available"
+// 	},
+// 	{
+// 		name: "brownie",
+// 		flavor: "chocolate",
+// 		status: "available"
+// 	},
+// 	{
+// 		name: "pie",
+// 		flavor: "strawberry",
+// 		status: "available"
+// 	},
+// 	{
+// 		name: "muffin",
+// 		flavor: "pistachio",
+// 		status: "available"
+// 	},
+// 	{
+// 		name: "donut",
+// 		flavor: "chocolate",
+// 		status: "available"
+// 	},
+// ]
 
-const chocoCakes = cakes.filter((cake) => {
+// const chocoCakes = cakes.filter((cake) => {
     // if(cake.flavor === "chocolate") {
     //     return true
     // }
-	return cake.flavor === "chocolate"
-})
-log(chocoCakes)
+	// return cake.flavor === "chocolate"
+// })
+// log(chocoCakes)
 
-let chocoCakesStatus = chocoCakes.map((chocoCake) => {
-	chocoCake.status = "sold out !"
-    return {
-		chocoCake
+// let chocoCakesStatus = chocoCakes.map((chocoCake) => {
+// 	chocoCake.status = "sold out !"
+//     return {
+// 		chocoCake
         // status: "sold out !"
-    }
+    // }
     // if(chocoCake.status === "available") {
     //     return "sold out !"
     // }
-})
-log(chocoCakesStatus)
+// })
+// log(chocoCakesStatus)
 
 // chocoCakes = chocoCakesStatus.map((chocoCake) => {
 //     return {
@@ -115,7 +115,7 @@ log(chocoCakesStatus)
 
 // 08 - Chess board
 
-const length = [0, 1, 2, 3, 4, 5, 6, 7]
+// const length = [0, 1, 2, 3, 4, 5, 6, 7]
 
 // length.forEach((line, i) => {
 // 	let stringLine = `Ligne: ${i} | `
@@ -139,23 +139,23 @@ const length = [0, 1, 2, 3, 4, 5, 6, 7]
 // 	log(stringLine)
 // })
 
-length.forEach((line, i) => {
-	let stringLine = ""
+// length.forEach((line, i) => {
+// 	let stringLine = ""
 
-	length.forEach((square, j) => {
-		if(i%2===0) {
-			if(j%2===0){
-				stringLine = stringLine + `[ ]`
-			}
-		}else {
-			stringLine = stringLine + `[x]`
-		}
-	}else {
-		// j%2!==0
-	}
-	)
-	log(stringLine)
-})
+// 	length.forEach((square, j) => {
+// 		if(i%2===0) {
+// 			if(j%2===0){
+// 				stringLine = stringLine + `[ ]`
+// 			}
+// 		}else {
+// 			stringLine = stringLine + `[x]`
+// 		}
+// 	}else {
+// 		j%2!==0
+// 	}
+// 	)
+// 	log(stringLine)
+// })
 
 
 // 09 - Exercice 3 bis
